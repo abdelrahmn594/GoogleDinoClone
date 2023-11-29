@@ -1,2 +1,2 @@
-# GoogleDinoClone
-google dinosaur game by using c++ &amp; sfml.
+# GymFit website
+With html,css & javascript ( not responsive)
