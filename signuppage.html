@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css "/>
+    <title>sign up</title>
+</head>
+<body>
+  <!-- sign up page -->
+ <div class="new-page">
+  <!-- form -->
+  <div class="form-box">
+    <h1 id="title">Sign Up</h1>
+    <form class="form" id="myForm">
+      <div class="input-group">
+        <!-- name field -->
+        <div class="input-field" id="nameField">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="name" placeholder="Name">
+          <div id="name-error" class="error"></div>
+        </div>
+        <!-- email field -->
+        <div class="input-field">
+          <i class="fa-solid fa-envelope fa-sm"></i>
+            <input type="email" id="email" placeholder="Email">
+            <div id="email-error" class="error" ></div>
+        </div>
+        <!-- pass field -->
+        <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" onkeyup="checkPassword(this.value )">
+            <div id="password-error" class="error"></div>
+            <span id="toggle" class="toggle"></span>
+
+            <p id="errorPassword" class="errorPassword"  ></p>
+        </div>
+        <!-- validation checker -->
+        <div class="validation">
+          <ul>
+            <li id="lower">At least one lowercase character
+            </li>
+            <li id="upper">At least one uppercase character
+            </li>
+            <li id="number">At least one number
+            </li>
+            <li id="special">At least one special character
+            </li>
+            <li id="length">At least 8 character
+            </li>
+          </ul>
+        </div>
+        <p>Lost your password?<a href="#"> Click here!</a></p>
+      </div>
+     
+      <div class="btn-field">
+        <button type="submit"  id="signupbtn">Sign up</button>
+      </div>
+    </form>
+  </div>
+ </div>
+
+
+ <script src="validationscript.js"></script>
+
+
+
+</body>
+</html>

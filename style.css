@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+  /*home page */
+.banner{
+     width: 100%;
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img6.jpg);
+}
+.banner > .navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5;
+    background-color: #000000a6;
+    margin: auto;
+    color: inherit;
+    
+}
+.logo{
+    width: 7%;
+    cursor: pointer;
+    position: relative;
+    left: 3%;
+}
+.banner > .navbar > ul > li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.banner > .navbar >ul{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.banner > .navbar > ul > li > a{
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    display: block;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.banner .navbar ul li a:hover{
+    background: orangered;
+}
+.banner .navbar ul li a.active {
+    background: orangered;
+  }
+.content1{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: white;
+    text-align: center;
+    right: 35%;
+}
+.content1 > span{
+    font-size: 50px;
+
+}
+.content2{
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+.content2 > h1{
+    font-size: 70px;
+    margin-top: 80;
+    color: white;
+}
+
+.content2 > h1:hover{
+    color: orange;
+    transition: 0.5s;
+}
+
+.content2 p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+/*About page*/
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+}
+#about > .text{
+    position: relative;
+    top: 19%;
+}
+.text > h1{
+    color: rgb(48, 110, 223);
+    padding: 20px 40px;
+    
+}
+.text > h3{
+    
+    padding: 0px 30px;
+    font-variant: petite-caps;
+    font-size: 30px;
+
+}
+.readmore{
+    padding: 15px 30px;
+    
+}
+/*courses page*/
+#courses-page{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 251, 251);
+}
+.title-page{
+    text-align: center;
+    font-size: 40px;
+    padding: 100px 0px;
+    font-weight: 700;
+    position: relative;
+    top: 10%;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    bottom: 46%;
+    left: 60%;
+    overflow: hidden;
+    /*transform: translate(-50%,-50%);*/
+    border: 20px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px orangered;
+  }
+  
+  .slide {
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+  }
+  @keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-110%);
+    }
+   
+    30%{
+        transform: translateX(-110%);
+    }
+    
+    40%{
+        transform: translateX(-222%);
+    }
+    50%{
+        transform: translateX(-222%);
+    }
+    60%{
+        transform: translateX(-330%);
+    }
+    70%{
+        transform: translateX(-330%);
+    }
+    80%{
+        transform: translateX(-440%);
+    }
+    90%{
+        transform: translateX(-440%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+  }
+  
+
+  
+  
+/*courses offered */
+.courses{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10%;
+    
+}
+/*items style*/
+.item{
+    flex-basis: 24%;
+    /*padding: 10px;*/
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 3px #9b9696 ;
+    cursor: pointer;
+    transition: transform 0.7s;
+    padding: 40px 0px;
+}
+.item:hover{
+    transform: translateY(15px);
+   
+}
+.title-item{
+    text-align: center;
+}
+/*text inside the item*/
+span{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+/*contact page style*/
+#contact{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 100px;
+}
+#contact > #content{
+    text-align: center;
+    position: relative;
+    bottom: 20%;
+}
+#contact >#content > h1{
+    font-size: 36px;
+    text-align: center;
+    color: orangered;
+    font-weight: 700;
+    position: relative;
+    top: 13vh;
+}
+.containerContact{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.containerContact .contactInfo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.containerContact .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.containerContact .contactInfo .box .icon{
+    min-width: 50px;
+    height: 50px;
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.containerContact .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.containerContact .contactInfo .box .text h3{
+    font-weight: 500;
+    color: orangered;
+}
+.contactForm{
+    width:50%;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+
+}
+.contactForm> form >h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm > form >.inputBox{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.contactForm > form >.inputBox > input,
+.contactForm > form > .inputBox  > textarea{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+.contactForm> form > .inputBox > span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: grey;
+}
+.contactForm > form > .inputBox > input:focus ~ span,
+.contactForm > form > .inputBox > input:valid ~span,
+.contactForm > form > .inputBox > textarea:focus ~ span,
+.contactForm > form > .inputBox > textarea:valid ~ span{
+color: orangered;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contactForm >form > .inputBox > input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*newpage*/
+.new-page{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img2.jpg);
+    
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 5%;
+}
+.form-box > h1{
+    color: orangered;
+    font-weight: 600;
+    margin-bottom: 40px;
+    
+}
+.form-box > h1::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    margin-top: 5px;
+    background: black;
+    position: absolute;
+    left: 46%;
+}
+
+.input-field{
+    width: 100%;
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.new-page > .form-box > .form >.input-group > .input-field >input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+
+}
+.input-field > i{
+    margin-left: 15px;
+    color: #999;
+}
+.errorName{
+    color: red;
+    position: absolute;
+    top: 25%;
+    font-size: 13px;
+}
+.errorEmail{
+    color: red;
+    position: absolute;
+    top: 55%;
+    font-size: 13px;
+
+}
+.toggle{
+    height: 37px;
+    width: 58px;
+    border-radius: 50%;
+    background-color: #8080803d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggle::before{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+.toggle.hide::before{
+    content: '\f070';
+}
+.validation{
+    background-color: orangered;
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+.validation > ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+.validation > ul >li{
+    position: relative;
+    list-style: none;
+    color: white;
+    display: flex;
+    transition: .5s;
+
+}
+
+.validation > ul >li::before{
+    content: '\f192';
+    font-family: fontAwesome;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+}
+.validation > ul >li.valid::before{
+    content: '\f00c';
+    color: #0f0;
+    transition: 1s;
+   }
+#name-error{
+    position: absolute;
+    top: 17%;
+    color: red;
+    font-size: 14px;
+
+}
+#email-error{
+    position: absolute;
+    color: red;
+    top: 38%;
+    font-size: 14px;
+
+}
+
+#password-error{
+    color: red;
+    position: absolute;
+    bottom: 39%;
+    font-size: 13px;
+
+}
+.new-page > .form-box > .form >.input-group > p{
+    text-align: left;
+    font-size: 13px;
+    
+}
+.new-page > .form-box > .form >.input-group > p > a{
+    text-decoration: none;
+    color: orangered;
+
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field > button{
+    flex-basis: 30%;
+    position: relative;
+    left: 35%;
+    background: orangered;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    height: 40px;
+    
+}
+.btn-field > button.btn2{
+    background: #d5d5d5;
+    color: orangered;
+}
+
+.btn-field > button:focus {
+    outline: none;
+}
+
+
+/*responsive*/
+/*
+@media(max-width: 600px){
+    .content2 h1{
+        font-size: 20px;
+    }
+    .content1 span{
+        font-size: 20px;
+    
+    }
+    ul{
+        font-size: smaller;
+        display: flex;
+        margin-left: -40px;
+        padding-top: 15px;
+    }
+    .logo{
+        width: 30%;
+        margin-left: 105px;
+    }
+    .text > h1{
+        font-size: 20px;
+    }
+    .text > h3{
+        font-size: 12px;
+    }
+    .courses{
+        flex-flow: column;
+    }
+    .title-page{
+        padding: 25px 0px;
+        font-size: 25px;
+    }
+    .title-item{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    .readmore{
+        padding: 0px 25px;
+    }
+    .item{
+        width: 100%;
+    }
+    span{
+        font-size: 0px;
+
+    }
+}*/
