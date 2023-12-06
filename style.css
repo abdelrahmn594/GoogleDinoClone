@@ -132,7 +132,7 @@
 .title-page{
     text-align: center;
     font-size: 40px;
-    padding: 100px 0px;
+    padding: 50px 0px;
     font-weight: 700;
     position: relative;
     top: 10%;
@@ -140,6 +140,7 @@
 
 .slideshow-container {
     position: relative;
+    display: flex;
     height: 600px;
     width: 500px;
     bottom: 46%;
@@ -245,20 +246,20 @@ span{
     align-items: center;
     flex-direction: column;
     background-color: black;
-    padding: 50px 100px;
+    /*padding: 50px 100px;*/
 }
-#contact > #content{
+/*#contact > #content{
     text-align: center;
     position: relative;
     bottom: 20%;
-}
+}*/
 #contact >#content > h1{
     font-size: 36px;
     text-align: center;
     color: orangered;
     font-weight: 700;
     position: relative;
-    top: 13vh;
+    /*top: 13vh;*/
 }
 .containerContact{
   display: flex;
@@ -298,7 +299,7 @@ span{
     color: orangered;
 }
 .contactForm{
-    width:50%;
+    width:70%;
     padding: 40px;
     background: white;
     border-radius: 25px;
@@ -538,8 +539,11 @@ transform: translateY(-20px);
 
 
 /*responsive*/
-/*
+
 @media(max-width: 600px){
+    #navbar{
+        display: none;
+    }
     .content2 h1{
         font-size: 20px;
     }
@@ -557,17 +561,26 @@ transform: translateY(-20px);
         width: 30%;
         margin-left: 105px;
     }
+    #about > .text {
+        position: relative;
+        top: 10%;
+    }
     .text > h1{
         font-size: 20px;
     }
     .text > h3{
-        font-size: 12px;
+        font-size: 25px;
+    }
+    .slideshow-container{
+        display: none;
     }
     .courses{
         flex-flow: column;
     }
     .title-page{
-        padding: 25px 0px;
+        position: relative;
+        top: 5%;
+        padding: 0;
         font-size: 25px;
     }
     .title-item{
@@ -584,4 +597,7 @@ transform: translateY(-20px);
         font-size: 0px;
 
     }
-}*/
+    .containerContact{
+        flex-wrap: wrap;
+    }
+}
